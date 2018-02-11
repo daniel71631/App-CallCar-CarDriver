@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.cardriver.areaActivity">
+
+    <CheckBox
+        android:id="@+id/check0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="台北市"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnfinish" />
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="新北市"
+        android:layout_below="@+id/check0"
+        android:layout_alignStart="@+id/check0" />
+
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check1"
+        android:layout_below="@+id/check1"
+        android:layout_marginTop="14dp"
+        android:text="桃園市" />
+
+    <CheckBox
+        android:id="@+id/check3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check2"
+        android:layout_below="@+id/check2"
+        android:layout_marginTop="14dp"
+        android:text="台中市" />
+
+    <CheckBox
+        android:id="@+id/check4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check3"
+        android:layout_below="@+id/check3"
+        android:layout_marginTop="14dp"
+        android:text="台南市" />
+
+    <CheckBox
+        android:id="@+id/check5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check4"
+        android:layout_below="@+id/check4"
+        android:layout_marginTop="14dp"
+        android:text="高雄市" />
+
+    <CheckBox
+        android:id="@+id/check6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check5"
+        android:layout_below="@+id/check5"
+        android:layout_marginTop="14dp"
+        android:text="基隆市" />
+
+    <CheckBox
+        android:id="@+id/check7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check6"
+        android:layout_below="@+id/check6"
+        android:layout_marginTop="14dp"
+        android:text="新竹市" />
+
+    <CheckBox
+        android:id="@+id/check8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check7"
+        android:layout_below="@+id/check7"
+        android:layout_marginTop="14dp"
+        android:text="嘉義市" />
+
+    <CheckBox
+        android:id="@+id/check9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check8"
+        android:layout_below="@+id/check8"
+        android:layout_marginTop="14dp"
+        android:text="新竹縣" />
+
+    <CheckBox
+        android:id="@+id/check10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="苗栗縣"
+        android:layout_alignBaseline="@+id/check0"
+        android:layout_alignBottom="@+id/check0"
+        android:layout_toEndOf="@+id/btnfinish" />
+
+    <CheckBox
+        android:id="@+id/check11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/check1"
+        android:layout_alignEnd="@+id/check10"
+        android:text="彰化縣" />
+
+    <CheckBox
+        android:id="@+id/check12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check11"
+        android:layout_alignTop="@+id/check2"
+        android:text="南投縣" />
+
+    <CheckBox
+        android:id="@+id/check13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check12"
+        android:layout_alignTop="@+id/check3"
+        android:text="雲林縣" />
+
+    <CheckBox
+        android:id="@+id/check14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/check13"
+        android:layout_alignTop="@+id/check4"
+        android:text="嘉義縣" />
+
+    <CheckBox
+        android:id="@+id/check15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/check14"
+        android:layout_alignTop="@+id/check5"
+        android:text="屏東縣" />
+
+    <CheckBox
+        android:id="@+id/check16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check15"
+        android:layout_alignTop="@+id/check6"
+        android:text="宜蘭縣" />
+
+    <CheckBox
+        android:id="@+id/check17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/check16"
+        android:layout_alignTop="@+id/check7"
+        android:text="花蓮縣" />
+
+    <CheckBox
+        android:id="@+id/check18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/check8"
+        android:layout_alignStart="@+id/check17"
+        android:text="台東縣" />
+
+    <CheckBox
+        android:id="@+id/check19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/check18"
+        android:layout_alignTop="@+id/check9"
+        android:text="澎湖縣" />
+
+    <CheckBox
+        android:id="@+id/check20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="金馬地區"
+        android:layout_below="@+id/check19"
+        android:layout_alignStart="@+id/check19" />
+
+    <Button
+        android:id="@+id/btnfinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送出"
+        android:layout_below="@+id/check20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+</RelativeLayout>

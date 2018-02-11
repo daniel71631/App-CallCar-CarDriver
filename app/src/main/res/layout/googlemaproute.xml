@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.daniel.googlemaproute.MapsActivity" >
+
+    <EditText
+
+        android:id="@+id/etOrigin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="出發地" />
+
+    <EditText
+
+        android:id="@+id/etDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="目的地" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <Button
+
+            android:id="@+id/btnFindPath"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:text="預計路線" />
+
+        <Button
+            android:id="@+id/btnnavigation"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="導航" />
+
+        <Button
+            android:id="@+id/btnarrive"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="我到了" />
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

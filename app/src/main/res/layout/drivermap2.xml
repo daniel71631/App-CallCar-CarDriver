@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.daniel.googlemaproute.MapsActivity" >
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/btnarrivedestination"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/switchcase"
+            android:layout_alignBottom="@+id/switchcase"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:text="到達乘客指定地點" />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnopenrecordroute"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="開啟記錄路線"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

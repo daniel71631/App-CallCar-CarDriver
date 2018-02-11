@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="帳號相關">
+        <PreferenceScreen
+            android:key="mail"
+            android:title="信箱">
+            <intent
+                android:action="cdrivergmail.string" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="changepassword"
+            android:title="修改密碼" >
+            <intent
+                android:action="changedriverpassword.string" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="通知">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="reserve"
+            android:title="預約提醒" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="其他資訊">
+        <PreferenceScreen
+            android:key="aboutus"
+            android:title="關於我們" >
+            <intent
+                android:action="aboutus.string" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="terms"
+            android:title="服務條款" >
+            <intent
+                android:action="terms.string" />
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

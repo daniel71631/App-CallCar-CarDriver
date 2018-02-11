@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sex">
+        <item>男</item>
+        <item>女</item>>
+    </array>>
+
+    <array name="CarStyle">
+        <item>轎車</item>
+        <item>休旅車</item>
+        <item>跑車</item>
+        <item>進口車</item>>
+    </array>>
+
+</resources>

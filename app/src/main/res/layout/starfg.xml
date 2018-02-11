@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btncar"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="89dp"
+        android:background="@mipmap/car2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnrecord"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@mipmap/record2"
+        android:layout_marginStart="75dp"
+        android:layout_above="@+id/txt2"
+        android:layout_toEndOf="@+id/btncar" />
+
+    <Button
+        android:id="@+id/btnset"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_marginTop="122dp"
+        android:background="@mipmap/settings2"
+        android:layout_below="@+id/txt"
+        android:layout_alignStart="@+id/txt" />
+
+    <Button
+        android:id="@+id/btnloggout"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@mipmap/loggout2"
+        android:layout_alignTop="@+id/btnset"
+        android:layout_alignStart="@+id/txt2" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btncar"
+        android:layout_alignStart="@+id/btncar"
+        android:layout_below="@+id/btncar"
+        android:text="開始接單"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="訂單紀錄"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/txt"
+        android:layout_alignBottom="@+id/txt"
+        android:layout_alignStart="@+id/btnrecord"
+        android:layout_alignEnd="@+id/btnrecord" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnset"
+        android:layout_alignStart="@+id/btnset"
+        android:layout_below="@+id/btnset"
+        android:text="設定"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnloggout"
+        android:layout_alignStart="@+id/btnloggout"
+        android:layout_below="@+id/btnloggout"
+        android:text="登出"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.daniel.cardriver">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.tonycube.googlemapdemo.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <application
+        android:name=".socketapplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="叫車好夯-司機版"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".applogo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".forgetpasswordActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Register2Activity" />
+        >
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".settingpreference" />
+        <activity android:name=".changemailActivity">
+            <intent-filter>
+                <action android:name="cdrivergmail.string" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".changepasswordActivity">
+            <intent-filter>
+                <action android:name="changedriverpassword.string" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".areaActivity" />
+        <activity android:name=".Verification" />
+        <activity android:name=".DriverCarInformationActivity" />
+        <activity android:name=".testcheckbox" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".DriverMapsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_driver_maps"></activity>
+        <activity android:name=".DriverCaseDetail"></activity>
+        <activity android:name=".CaseQuickMap"></activity>
+        <activity
+            android:name=".GoogleMapRoute"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".DriverMap2"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".recordcasedetail"></activity>
+        <activity android:name=".DriverMapCarCaseDetail"></activity>
+    </application>
+
+</manifest>

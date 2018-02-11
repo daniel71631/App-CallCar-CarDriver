@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.cardriver.RegisterActivity">
+
+    <EditText
+        android:id="@+id/emailtxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:ems="10"
+        android:hint="信箱"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/epwchecktxt" />
+
+    <EditText
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="12"
+        android:id="@+id/epwtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailtxt2"
+        android:layout_below="@+id/emailtxt2"
+        android:layout_marginTop="61dp"
+        android:width="300dp"
+        android:ems="10"
+        android:hint="密碼(6~12位英文數字)"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="12"
+        android:id="@+id/epwchecktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:ems="10"
+        android:hint="確認密碼"
+        android:inputType="textPassword"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/epwtxt"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/epwchecktxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:text="註冊"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

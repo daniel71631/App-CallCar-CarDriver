@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="確認訂單資訊"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="30sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView27"
+        android:layout_marginTop="35dp"
+        card_view:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="訂單詳細資訊"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView30"
+                android:layout_marginTop="24dp"
+                android:text="開始時間"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView32"
+                android:layout_marginTop="34dp"
+                android:text="結束時間"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/etxtCaseFares"
+                android:layout_alignBottom="@+id/etxtCaseFares"
+                android:layout_alignParentStart="true"
+                android:text="車資"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView32"
+                android:layout_alignBottom="@+id/textView32"
+                android:layout_marginStart="9dp"
+                android:layout_toEndOf="@+id/textView30"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView33"
+                android:layout_alignBottom="@+id/textView33"
+                android:layout_alignStart="@+id/txtStartTime"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etxtCaseFares"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:inputType="textPersonName|number"
+                android:layout_below="@+id/txtEndTime"
+                android:layout_alignStart="@+id/txtEndTime" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btncheckcase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="確認" />
+
+</RelativeLayout>
